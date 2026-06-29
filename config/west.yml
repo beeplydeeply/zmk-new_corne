@@ -27,5 +27,9 @@ manifest:
     - name: zmk-module-runtime-input-processor
       remote: cormoran
       revision: zmk-v0.3.0.0
+    - name: zmk-corne-oled
+      url: https://github.com/a741725193/zmk-corne-oled
+      revision: main
+      path: modules/zmk-corne-oled
   self:
     path: config
