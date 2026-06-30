@@ -4,6 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: cormoran
       url-base: https://github.com/cormoran
+    # dongle_display
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
+    # nice_oled - nice_epaper - dongle_display!view - oled Adapter
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
@@ -31,5 +37,21 @@ manifest:
       url: https://github.com/a741725193/zmk-corne-oled
       revision: main
       path: modules/zmk-corne-oled
+    # dongle_display
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: v0.3
+    # nice_oled - nice_epaper
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
+    # dongle_display!view
+    - name: zmk-dongle-display-view
+      remote: mctechnology17
+      revision: main
+    # oled Adapter
+    - name: zmk-oled-adapter
+      remote: mctechnology17
+      revision: main
   self:
     path: config
