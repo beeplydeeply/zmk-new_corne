@@ -8,7 +8,7 @@ layers:
   - R
   - T
   - $$mdi:arrow-up-bold$$
-  - Y
+  - {t: Y, h: Ctl+Y}
   - U
   - I
   - O
@@ -35,7 +35,7 @@ layers:
   - {t: C, h: Ctl+C}
   - {t: V, h: Ctl+V}
   - B
-  - {t: pso, h: toggle}
+  - {t: QWERTY, h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -64,11 +64,11 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP 4
+  - KP 5
   - $$mdi:arrow-left-bold$$
   - F22
   - $$mdi:arrow-right-bold$$
@@ -79,11 +79,11 @@ layers:
   - {t: \, s: '|'}
   - {t: F5, h: Sft+F5}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - KP 6
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP 0
   - '&bl BL_TOG'
   - $$mdi:arrow-down-bold$$
   - '!'
