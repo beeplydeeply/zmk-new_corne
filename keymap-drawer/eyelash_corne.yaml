@@ -114,10 +114,10 @@ layers:
   - F12
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
   - F22
   - $$mdi:pan-right$$
@@ -132,7 +132,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
