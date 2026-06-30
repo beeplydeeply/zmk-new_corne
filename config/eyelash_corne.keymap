@@ -50,10 +50,10 @@
         default {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E      &kp R  &kp T                         &kp UP               &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BSPC
-&kp TAB         &kp A  &kp S  &kp D      &kp F  &kp G               &kp LEFT  &kp F22   &kp RIGHT  &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V  &kp B      &to 4              &kp DOWN             &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                              &kp LCTRL  &mo 2  &kp SPACE                                          &kp ENTER  &mo 3  &kp RALT
+&kp ESCAPE      &kp Q  &kp W  &kp E      &kp R  &kp T                                    &kp PRINTSCREEN                               &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BSPC
+&kp TAB         &kp A  &kp S  &kp D      &kp F  &kp G               &kp RS(PRINTSCREEN)  &kp F22                  &kp RC(PRINTSCREEN)  &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V  &kp B      &to 4                         &kp RC(RS(PRINTSCREEN))                       &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                              &kp LCTRL  &mo 2  &kp SPACE                                                                              &kp ENTER  &mo 3  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>, <&rsr_trans>;
@@ -77,7 +77,7 @@
 &kp GRAVE       &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3     &kp N4           &kp N5                                   &kp UP_ARROW                   &kp NUMBER_6  &kp N7        &kp N8            &kp N9             &kp N0         &kp BSPC
 &kp TAB         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                &kp LEFT  &kp F22       &kp RIGHT_ARROW  &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &mt RS(F5) F5
 &kp LEFT_SHIFT  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &bl BL_TOG              &kp DOWN                       &kp EXCL      &kp QUESTION  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SLASH      &kp RIGHT_SHIFT
-                                                  &trans           &trans           &kp SPACE                                                               &kp ENTER     &none         &trans
+                                                  &kp LCTRL        &trans           &kp SPACE                                                               &kp ENTER     &none         &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&rsr_bright>, <&rsr_trans>;
@@ -86,10 +86,10 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1     &kp F2      &kp F3     &kp F4       &kp F5     &kp F6                                   &msc SCRL_UP                     &kp F7       &kp F8     &kp F9       &kp F10     &kp F11          &kp F12
-&trans     &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                 &msc SCRL_LEFT  &kp F22         &msc SCRL_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&kp LCTRL  &sys_reset  &trans     &bootloader  &trans     &mkp MB5   &kp C_MUTE                    &msc SCRL_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                  &trans       &trans     &kp SPACE                                                                 &kp ENTER    &trans     &trans
+&kp F1          &kp F2      &kp F3     &kp F4       &kp F5     &kp F6                                   &msc SCRL_UP                     &kp F7       &kp F8  &kp F9         &kp F10     &kp F11        &kp F12
+&kp TAB         &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                 &msc SCRL_LEFT  &kp F22         &msc SCRL_RIGHT  &bootloader  &none   &none          &none       &kp PAGE_UP    &none
+&kp LEFT_SHIFT  &sys_reset  &trans     &bootloader  &trans     &mkp MB5   &kp C_MUTE                    &msc SCRL_DOWN                   &trans       &trans  &bootloader    &sys_reset  &kp PAGE_DOWN  &none
+                                       &trans       &trans     &kp SPACE                                                                 &kp ENTER    &trans  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&rsr_bright>, <&rsr_trans>;
@@ -97,10 +97,10 @@
 
         pso {
             bindings = <
-&kp ESCAPE  &mt LC(NUMBER_1) NUMBER_1  &mt LC(NUMBER_2) NUMBER_2  &mt LC(NUMBER_3) NUMBER_3  &mt LC(NUMBER_4) NUMBER_4  &mt LC(N5) N5                     &kp UP_ARROW             &mt RC(NUMBER_6) NUMBER_6  &mt RC(N7) N7  &mt RC(N8) N8  &mt RC(N9) N9  &mt RC(N0) N0  &trans
-&kp TAB     &trans                     &trans                     &trans                     &trans                     &trans                  &kp LEFT  &kp F22       &kp RIGHT  &trans                     &trans         &trans         &trans         &trans         &trans
-&none       &trans                     &trans                     &trans                     &trans                     &trans         &to 0              &kp DOWN                 &trans                     &trans         &trans         &trans         &trans         &trans
-                                                                  &trans                     &trans                     &kp SPACE                                                  &kp ENTER                  &trans         &trans
+&kp ESCAPE      &mt LC(NUMBER_1) NUMBER_1  &mt LC(NUMBER_2) NUMBER_2  &mt LC(NUMBER_3) NUMBER_3  &mt LC(NUMBER_4) NUMBER_4  &mt LC(N5) N5                     &kp UP_ARROW             &mt RC(NUMBER_6) NUMBER_6  &mt RC(N7) N7  &mt RC(N8) N8  &mt RC(N9) N9  &mt RC(N0) N0  &none
+&kp TAB         &kp Q                      &kp W                      &kp E                      &none                      &none                   &kp LEFT  &kp F22       &kp RIGHT  &kp HOME                   &none          &none          &none          &kp PAGE_UP    &none
+&kp LEFT_SHIFT  &kp A                      &kp S                      &kp D                      &none                      &none          &to 0              &kp DOWN                 &kp END                    &none          &none          &none          &kp PAGE_DOWN  &none
+                                                                      &kp LCTRL                  &none                      &kp SPACE                                                  &kp ENTER                  &none          &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
